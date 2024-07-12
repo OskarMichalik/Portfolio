@@ -1,0 +1,29 @@
+.menuBarDiv {
+  width: 1600px;
+  height: 50px;
+  background: rgb(85, 147, 252);
+  background: linear-gradient(
+    180deg,
+    rgba(85, 147, 252, 1) 0%,
+    rgba(30, 88, 221, 1) 22%
+  );
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  padding-left: 15px;
+}
+.barAppIcon {
+  width: 60px;
+  height: 80%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.barAppIcon:hover {
+  cursor: pointer;
+}
+.barAppIcon img {
+  width: 30px;
+}

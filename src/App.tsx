@@ -1,24 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import classes from './App.module.css';
+import ShowIconsOnDesktop from './components/ShowIconsOnDesktop';
+import ShowApps from './components/ShowApps';
+import MenuBar from './components/MenuBar';
+import { locationInterface } from './interfaces';
 
 function App() {
+  const wallpaper = require("./assets/wallpaper.png");
+  const [location, setLocation] = useState<locationInterface>("desktop");
+  const [openedApps, setOpenedApps] = useState<locationInterface[]>([]);
+  console.log(openedApps);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={classes.screen}>
+      <div className={classes.appDiv}>
+        <div className={classes.desktopDiv} style={{ zIndex: location === "desktop" ? 10 : 0 }}>
+          <img src={wallpaper} alt='wallpaper' />
+          <ShowIconsOnDesktop setLocation={setLocation} setOpenedApps={setOpenedApps} openedApps={openedApps} />
+        </div>
+        <ShowApps location={location} setLocation={setLocation} setOpenedApps={setOpenedApps} openedApps={openedApps} />
+      </div>
+      <MenuBar location={location} setLocation={setLocation} openedApps={openedApps} />
     </div>
   );
 }
