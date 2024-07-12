@@ -1,15 +1,67 @@
 .portfolioDiv {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 5px;
-    background-color: #f4f4f4;
-  }
-  .portfolioContentDiv {
-    width: 100%;
-    height: 90%;
-    margin-top: 5px;
-  }
-  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  background-color: #f4f4f4;
+}
+.portfolioContentDiv {
+  width: 100%;
+  height: 90%;
+  margin-top: 5px;
+  position: relative;
+}
+.main {
+  width: 90%;
+  margin: 15px auto;
+  border-radius: 15px;
+  padding: 25px;
+  background-color: #000;
+  color: white;
+  text-align: center;
+}
+.main h1 {
+  font-size: 50px;
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+.showProjects {
+  width: 100%;
+  padding: 25px;
+}
+.showProjects h1 {
+  text-align: center;
+  width: 100%;
+}
+.projectBlock {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.projectBlock a {
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+.listProjects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.portfolioFooter {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.portfolioFooterContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.portfolioFooterContent a {
+  color: #000;
+  text-decoration: none;
+}
