@@ -1,0 +1,27 @@
+.projectGallery {
+  display: flex;
+  flex-direction: column;
+}
+.projectGallery h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.projectShowcaseLeft,
+.projectShowcaseRight {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 100px;
+}
+.projectDescription {
+  width: 30%;
+  text-align: left;
+}
+.projectDescription ul {
+  margin-top: 0;
+}
+.listHeader {
+  margin-bottom: 5px;
+}
+

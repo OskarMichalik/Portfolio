@@ -16,6 +16,7 @@
   align-items: center;
   padding-left: 15px;
   width: 95%;
+  gap: 5px;
 }
 .barAppIcon {
   width: 60px;
