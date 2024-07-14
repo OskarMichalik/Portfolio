@@ -1,0 +1,33 @@
+.topBarDiv {
+  width: 100%;
+  height: 30px;
+  background-color: #000086;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.toolsDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.toolsIcons {
+  height: 20px;
+  user-select: none;
+}
+.toolsIcons:hover {
+  cursor: pointer;
+}
+.appLabelDiv {
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+.appLabelDiv img {
+  height: 25px;
+}

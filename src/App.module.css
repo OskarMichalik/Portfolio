@@ -1,0 +1,23 @@
+.screen {
+  margin: 50px auto;
+  margin-bottom: 0;
+  width: 1600px;
+  height: 950px;
+}
+.appDiv {
+  width: 1600px;
+  height: 900px;
+  position: relative;
+}
+.desktopDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.madeByMe {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}

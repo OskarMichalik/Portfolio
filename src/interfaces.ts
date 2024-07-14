@@ -1,0 +1,1 @@
+export type locationInterface = "desktop" | "portfolio" | "info" | "computer";
