@@ -1,5 +1,6 @@
 .screen {
   margin: 50px auto;
+  margin-bottom: 0;
   width: 1600px;
   height: 950px;
 }
@@ -14,4 +15,9 @@
   left: 0;
   width: 100%;
   height: 100%;
+}
+.madeByMe {
+  width: 100%;
+  text-align: center;
+  color: #fff;
 }

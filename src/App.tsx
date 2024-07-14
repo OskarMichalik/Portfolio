@@ -12,16 +12,19 @@ function App() {
   console.log(openedApps);
 
   return (
-    <div className={classes.screen}>
-      <div className={classes.appDiv}>
-        <div className={classes.desktopDiv} style={{ zIndex: location === "desktop" ? 10 : 0 }}>
-          <img src={wallpaper} alt='wallpaper' />
-          <ShowIconsOnDesktop setLocation={setLocation} setOpenedApps={setOpenedApps} openedApps={openedApps} />
+    <>
+      <div className={classes.screen}>
+        <div className={classes.appDiv}>
+          <div className={classes.desktopDiv} style={{ zIndex: location === "desktop" ? 10 : 0 }}>
+            <img src={wallpaper} alt='wallpaper' />
+            <ShowIconsOnDesktop setLocation={setLocation} setOpenedApps={setOpenedApps} openedApps={openedApps} />
+          </div>
+          <ShowApps location={location} setLocation={setLocation} setOpenedApps={setOpenedApps} openedApps={openedApps} />
         </div>
-        <ShowApps location={location} setLocation={setLocation} setOpenedApps={setOpenedApps} openedApps={openedApps} />
+        <MenuBar location={location} setLocation={setLocation} openedApps={openedApps} />
       </div>
-      <MenuBar location={location} setLocation={setLocation} openedApps={openedApps} />
-    </div>
+      <p className={classes.madeByMe}>Made by Oskar Michalik :)</p>
+    </>
   );
 }
 

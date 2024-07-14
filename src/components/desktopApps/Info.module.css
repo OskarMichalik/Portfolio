@@ -7,8 +7,174 @@
   padding: 5px;
   background-color: #f4f4f4;
 }
+.infoDivMinimized {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  padding: 5px;
+  background-color: #f4f4f4;
+  pointer-events: none;
+  z-index: 0;
+}
 .infoContentDiv {
   width: 100%;
-  height: 90%;
+  height: 96%;
   margin-top: 5px;
+  position: relative;
+  overflow-y: scroll;
+}
+.mainInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+}
+.leftMainContent {
+  width: 25%;
+  height: 460px;
+}
+.leftMainContent img {
+  width: 100%;
+}
+.rightMainContent {
+  width: 25%;
+  padding: 25px;
+  padding-top: 50px;
+  position: relative;
+}
+.rightMainContent p {
+  margin: 0;
+  margin-top: 5px;
+}
+.rightMainContent ul {
+  margin: 0;
+  margin-top: 5px;
+}
+.rightMainContent img {
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+  width: 200px;
+}
+.rightMainContent img:hover {
+  cursor: pointer;
+}
+.adDiv {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.adContent {
+  position: relative;
+}
+.adContent:hover {
+  cursor: pointer;
+}
+.closeAdIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 20px;
+}
+.backdrop {
+  position: absolute;
+  width: 100%;
+  background-color: #0000002f;
+  z-index: 9;
+}
+.modal {
+  z-index: 10;
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  top: 250px;
+  background-color: white;
+  border-radius: 5px;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.modal h2 {
+  margin-top: 0;
+}
+.modalContent {
+  padding: 25px;
+}
+.modalButtons {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #000086;
+  align-items: center;
+  padding: 10px;
+}
+.modalButtons img {
+  height: 20px;
+  user-select: none;
+}
+.modalButtons img:hover {
+  cursor: pointer;
+}
+.socialDiv a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  padding: 5px;
+  color: #000;
+  text-decoration: none;
+}
+.socialDiv:hover {
+  background-color: #f4f4f4;
+  cursor: pointer;
+}
+.socialDiv img {
+  height: 30px;
+}
+.achievementsDiv {
+  padding: 25px;
+}
+.achievementsDiv ul {
+  margin: 0;
+  margin-top: 5px;
+}
+.skillsDiv {
+  padding: 25px;
+}
+.skillsDiv ul {
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.skillsDiv h4 {
+  margin: 0;
+  margin-top: 15px;
+}
+.articleHeader {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+  user-select: none;
+}
+.articleHeader:hover {
+  cursor: pointer;
+}
+.portfolioFooter {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.portfolioFooterContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.portfolioFooterContent a {
+  color: #000;
+  text-decoration: none;
 }
