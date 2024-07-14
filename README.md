@@ -8,8 +8,10 @@
 
 -- MyPortfolio
 
-    In this app you can see all my projects, sorted by the tools used in them. Following the projects,
-    we have the project gallery, where you can see main images from my projects with a small description.
+    In this app you can see all my projects,
+    sorted by the tools used in them. Following the projects,
+    we have the project gallery, where you can see main images
+    from my projects with a small description.
     You can click on the images to enlarge them
 
 -- Info app
